@@ -1,0 +1,281 @@
+.containing-divs {
+    position: relative;
+}
+
+/*Table Titles*/
+div.project-table-title {
+  position:absolute;
+  text-align: right;
+  right:750px;
+}
+div.assigned-projects-title{
+  text-align: right;
+  position:absolute;
+  top:270px;
+  right:580px;
+}
+
+.project-table-title h3 {
+   position:absolute;
+   color: cornflowerblue;
+   font-size: 18px;
+   font-weight: 400;
+   font-style:normal;
+   font-family:'Leelawadee UI',helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+} 
+div.employee-table-title {
+  text-align: right;
+  position:absolute;
+  top:270px;
+  right:670px;
+}
+
+.employee-table-title h3 {
+   color: cornflowerblue;
+   font-size: 18px;
+   font-weight: 400;
+   font-style:normal;
+   font-family:'Leelawadee UI',helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+} 
+
+.assigned-projects-title h3 {
+   color: cornflowerblue;
+   font-size: 18px;
+   font-weight: 400;
+   font-style:normal;
+   font-family:'Leelawadee UI',helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+} 
+
+
+/*Table Style*/
+
+.table-fixed tbody {
+  height: 150px;
+  overflow-y: auto;
+}
+ .table-fixed tbody,.table-fixed thead {
+  display: block;
+}
+
+.projects-table {
+  position:absolute;
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: 600px;
+  max-width:700px;
+  top:70px;
+  padding:3px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  
+}
+
+.employees-table{
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: 600px;
+  margin-top:350px;
+  max-width:700px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+ .assigned-projects-table{
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: 600px;
+  margin-top:350px;
+  max-width:380px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+/*th Style--> header cells*/
+th {
+  color:#D5DDE5;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  font-size:14px;
+  font-weight: 100;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  min-width:80px;
+}
+
+th:first-child {
+  border-top-left-radius:5px;
+}
+ 
+ th:last-child {
+  border-top-right-radius:5px;
+  border-right:none;
+}
+
+ #user-information{
+  position: absolute;
+  top: 425px;
+  left: 185px;
+}
+  
+/*row styles*/
+.employees-table, .assigned-projects-table, .projects-table tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:14px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+.row-onhover tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+.employees-table, .assigned-projects-table, .projects-table tr:first-child {
+  border-top:none;
+}
+
+.employees-table, .assigned-projects-table, .projects-table tr:last-child {
+  border-bottom:none;
+}
+ 
+.employees-table, .assigned-projects-table, .projects-table tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+.row-onhover tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  text-align:left;
+  font-weight:300;
+  font-size:14px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+    min-width:80px;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+.approve:hover {
+    color:green;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-weight:800;
+}
+.discard:hover {
+    color:red;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-weight:800;
+}
+.userInfo-table{
+    empty-cells:show;
+    border:1px solid #cbcbcb
+}
+
+.userInfo-table td,.pure-table th{
+    border-left:1px solid #cbcbcb;
+    border-width:0 0 0 1px;
+    font-size:inherit;
+    margin:0;
+    overflow:visible;
+    padding:.5em 1em
+}
+
+.userInfo-table td{
+    background-color:white;
+}
+
+/*Images Styles*/
+
+#cam-upload {
+  position: absolute;
+  top: 145px;
+  left: 400px; 
+  height:40px; 
+  width:40px;
+}
+
+#cam-upload:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+}
+
+#user-photo{
+    float:left; 
+    padding-top:2px;
+    padding-bottom:2px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+
+
+/*Buttons styles*/
+.btn-edit-profile {
+    position: absolute;
+    top: 650px;    
+    left: 285px;
+}
+.btn-edit-profile:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+
+.btn-create-project{
+        margin-left:1100px;
+        text-align:center;
+}
+
+.btn-profile-page{
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#1988d1;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
